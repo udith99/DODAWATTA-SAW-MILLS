@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore our wide range of timber products including hardwood, structural timber, and furniture-grade wood at Dodawatta Saw Mills.">
+    <title>Our Products | Dodawatta Saw Mills (Pvt) Ltd</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        timber: {
+                            50: '#fdf8f4',
+                            100: '#f8efe6',
+                            200: '#efdac1',
+                            300: '#e4bf96',
+                            400: '#d69e65',
+                            500: '#c57f3c', // Primary Accent
+                            600: '#b86631',
+                            700: '#994f2a',
+                            800: '#7c4125',
+                            900: '#643721',
+                            950: '#361b0f',
+                        },
+                        wooddark: '#1e1611',
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
+                        <img src="assets/images/logo.png" alt="Dodawatta Saw Mills Logo"
+                            class="h-12 md:h-14 w-auto rounded-full shadow-sm bg-white p-1">
+                        <span
+                            class="font-bold text-2xl tracking-tight text-wooddark font-['Outfit'] hidden sm:block">Dodawatta
+                            Saw Mills</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="index.html"
+                        class="text-gray-700 hover:text-timber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                    <a href="about.html"
+                        class="text-gray-700 hover:text-timber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About
+                        Us</a>
+                    <a href="products.html"
+                        class="text-timber-600 px-3 py-2 rounded-md text-sm font-semibold transition-colors">Products</a>
+                    <a href="services.html"
+                        class="text-gray-700 hover:text-timber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                    <a href="contact.html"
+                        class="bg-timber-600 text-white hover:bg-timber-700 px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-lg">Contact
+                        Us</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-timber-600 hover:bg-gray-100 focus:outline-none">
+                        <i class="ph ph-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white shadow-xl absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Home</a>
+                <a href="about.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">About Us</a>
+                <a href="products.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 border-l-4 border-timber-600 bg-timber-50">Products</a>
+                <a href="services.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Services</a>
+                <a href="contact.html"
+                    class="block px-3 py-2 mt-4 text-center rounded-md text-base font-medium bg-timber-600 text-white">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-28 pb-16 bg-gradient-to-br from-timber-100 to-white text-center border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+            <h1 class="text-5xl font-extrabold text-wooddark mb-4 font-['Outfit']">Our Products</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">High-quality sawn timber tailored precisely for
+                construction, furniture, and general building applications.</p>
+        </div>
+    </div>
+
+    <!-- Products Showcase -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 font-['Outfit']">A Wide Range of Premium Wood
+                        Products</h2>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        We supply a diverse range of top-quality timber products to support your projects, from
+                        heavy-duty structural applications to fine furniture crafting.
+                    </p>
+                    <p class="text-gray-600 mb-8 text-lg font-medium">If you require specific dimensions or quantities,
+                        our expert team can prepare timber exactly according to your project requirements.</p>
+                </div>
+                <div data-aos="fade-left" class="grid grid-cols-2 gap-4">
+                    <img src="assets/images/products1.jpg" alt="High Quality Wood Product 1"
+                        class="rounded-3xl shadow-xl w-full h-80 object-cover">
+                    <img src="assets/images/products2.jpg" alt="High Quality Wood Product 2"
+                        class="rounded-3xl shadow-xl w-full h-80 object-cover">
+                </div>
+            </div>
+
+            <!-- Products List -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <!-- Product 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-timber-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="ph-fill ph-tree text-2xl text-timber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Sawn Timber</h3>
+                    <p class="text-gray-600">High-grade local hardwood and softwood cleanly sawn for various general
+                        applications.</p>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-timber-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="ph-fill ph-buildings text-2xl text-timber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Construction-Grade</h3>
+                    <p class="text-gray-600">Durable and exceptionally strong timber engineered perfectly to satisfy
+                        foundational building codes.</p>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-timber-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="ph-fill ph-house-line text-2xl text-timber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Roofing & Structural</h3>
+                    <p class="text-gray-600">Specialized timber designed specifically to support heavy structural
+                        roofing frameworks reliably.</p>
+                </div>
+                <!-- Product 4 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-12 h-12 bg-timber-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="ph-fill ph-armchair text-2xl text-timber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Furniture-Grade Wood</h3>
+                    <p class="text-gray-600">Beautiful, defect-free wood that highlights natural grains, perfect for
+                        high-end furniture manufacturing.</p>
+                </div>
+                <!-- Product 5 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-12 h-12 bg-timber-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="ph-fill ph-sliders text-2xl text-timber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Custom-Cut Sizes</h3>
+                    <p class="text-gray-600">We customize standard stock to exact project dimensions as requested by the
+                        client.</p>
+                </div>
+                <!-- Product 6 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-12 h-12 bg-timber-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="ph-fill ph-truck text-2xl text-timber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bulk Sector Orders</h3>
+                    <p class="text-gray-600">Extensive large-scale inventory availability crafted strictly to fulfill
+                        massive project requisitions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Orders CTA -->
+    <section class="py-16 bg-timber-600 text-center">
+        <div class="max-w-4xl mx-auto px-4" data-aos="zoom-in">
+            <h3 class="text-3xl font-bold text-white mb-4">Looking for Unique Timber Specifications?</h3>
+            <p class="text-timber-100 text-lg mb-8 max-w-2xl mx-auto">Let our experienced team handle your specific
+                custom cuts or high-volume orders.</p>
+            <a href="contact.html"
+                class="inline-block bg-white text-timber-700 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">
+                Talk About Custom Needs
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+            <!-- Footer content (same as other pages) -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <img src="assets/images/logo.png" alt="Dodawatta Saw Mills Logo"
+                            class="h-12 md:h-14 w-auto rounded-full bg-white p-1">
+                        <span class="font-bold text-2xl tracking-tight font-['Outfit']">Dodawatta Saw Mills</span>
+                    </a>
+                    <p class="text-gray-400 mb-6 max-w-md">Dodawatta Saw Mills (Pvt) Ltd is a leading timber processing
+                        and supply company specializing in high-quality sawn timber and wood products.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 font-['Outfit']">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-timber-500 transition-colors">Home</a>
+                        </li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-timber-500 transition-colors">About
+                                Us</a></li>
+                        <li><a href="products.html"
+                                class="text-gray-400 hover:text-timber-500 transition-colors">Products</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-timber-500 transition-colors">Services</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-timber-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 font-['Outfit']">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="ph-fill ph-map-pin text-timber-500 mt-1 mr-3 text-xl"></i>
+                            <span class="text-gray-400">Sedawatta – Ambatale Road,<br>Kolonnawa, Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center"><i class="ph-fill ph-phone text-timber-500 mr-3 text-xl"></i><a
+                                href="tel:+94112578342"
+                                class="text-gray-400 hover:text-timber-500 transition-colors">+94 11 257 8342</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 py-6 text-center text-gray-500 text-sm">
+            <p>&copy; <span id="current-year"></span> Dodawatta Saw Mills (Pvt) Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
